@@ -10,7 +10,7 @@ html{scroll-behavior:smooth;}
 .navbar{ background-color:#214508; width: 100%;display:flex; justify-content: space-between; align-items: center; padding:10px 50px;position: fixed;top: 0;left: 0;
 }
 nav #logo{border:none;}
-nav img{width: 200px;}
+nav img{max-width: 200px;}
 nav nav{display: flex;}
 nav li a{color:#fff;font-size:max(16px,1.5vw);}
 nav li {margin:0 15px;text-align:center;}
@@ -18,9 +18,16 @@ nav li:first-child{margin: left 0;}
 nav li:last-child{margin-right: 0;}
 
 @media(max-width:700px){
-	nav {flex-direction:column;}
+	.navbar{flex-direction: column;}
+	.navbar nav{flex-direction: column;display: none;}
+	nav img{width:100px;}
+	nav nav a{font-size: 10px;}
+
+
+	/* nav {flex-direction:column;} */
 }
 header .headerline-btn{
+	display: flex;align-items: center;
 	position: fixed;left:10px;bottom: 10px;
 	padding: 10px 30px;
 	background:linear-gradient(0deg, #214508, #058030 );
@@ -34,20 +41,27 @@ header .headerline-btn a{
 }
 header .headerline-btn {display: flex;}
 
+@media(max-width:700px){
+	header .headerline-btn{padding: 5px 10px;}
+	header .headerline-btn a{font-size: 8px;}
+}
+
 #moldura{
-	margin-top: max(100px);
+	margin-top: max(50px, 70px);
 	width:100%;
 	height:max(80vh);
 	background-size:contain;
 	background-repeat:no-repeat;
 	
 }
-
+@media(max-width:700px){
+	#moldura{height: max(100px,200px);}
+}
 
 
 
 @media(max-width:700px){
-	#moldura {height:20vh;}
+	/* #moldura {height:20vh;} */
 }
 
 section{display:flex;flex-direction:column;align-items:center;align-items:top;
@@ -81,10 +95,10 @@ section h2{font-size:max(30px,5vw);text-align: center;color:#ffb504;margin-botto
 .cards .card p{font-size:18px; text-align:justify;}
 
 @media(max-width:700px){
-	.cards {flex-direction:column;align-items:center;}
+	/* .cards {flex-direction:column;align-items:center;}
 	.cards .card{width:90%;margin-bottom:10px;}
 	.cards .card h3{font-size:16px;}
-	.cards .card p{font-size:14px;}
+	.cards .card p{font-size:14px;} */
 }
 
 
