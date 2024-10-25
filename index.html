@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Auto Escola Serra</title>
+	
+	<script language="javascript">
+	
+	function preload(){
+		imgs
+	}
+	
+	
+	
+	
+	function iniciaSlider(){
+		max=6;
+		min=1;
+		fi=min;
+		tr=true;
+		carregaFoto("img/f1.jpg");
+		document.getElementById("moldura").addEventListener("transitionend",fimTr)
+	}
+		
+	function fimTr(){
+		tr=true;
+	}
+
+
+	function carregaFoto(foto){
+		document.getElementById("moldura").style.backgroundImage="URL("+foto+")";
+	}
+
+		function prox(){
+		if(tr){
+			tr=false;
+			fi++;
+			if(fi>max){
+				fi=min;
+			}
+		}
+		carregaFoto("img/f"+fi+".jpg");
+	}
+		function ant(){
+			if(tr){
+				tr=false;
+				fi--;
+				if(fi<min){
+					fi=max;
+			}
+		}
+		carregaFoto("img/f"+fi+".jpg");
+	}
+	
+	</script>
+	
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body onload="iniciaSlider()">
+	
+	<nav class="navbar">
+		<a id="logo" href="#"><img src="img/logo-serra.png" alt="Auto Escola Serra"></a>
+
+		<nav>
+			<li><a href="#historia">Nossa História</a></li>
+			<li><a href="">Serviços</a></li>
+			<li><a href="">Unidades</a></li>
+			<li><a href="">Avaliaçõs</a></li>
+			<li><a href="">Entre em Contato</a></li>
+		</nav>
+	</nav>
+	<header class="bg-headerline">
+		<div id="moldura"></div>
+		<div class="headerline-btn">
+			<img src="img/zap.png" alt="">
+			<a target="_blank" href="https://api.whatsapp.com/send?phone=5598981669023&text=Ol%C3%A1%2C%20desejo%20conhecer%20os%20servi%C3%A7os%20da%20Auto%20Escola%20Serra">fale conosco</a></div>
+	<header>
+	<section>
+		<p id="historia">Conheça a Alto Escola Serra</p>
+		<h2>SUA JORNADA NAS ESTRADAS COMEÇA AQUI!</h2>
+		<div class="cards">
+			<div class="card">
+				<i>0</i>
+				<h3>Missão</h3>
+				<p>=Atua no ramo de formação de condutores buscando sempre oferecer qualidade, 
+				conforto e agilidade na prestação de serviço para a 1ª Habilitação, 
+				adição de categoria e renovação.</p>
+			</div>
+			<div class="card">
+				<i>0</i>
+				<h3>Missão</h3>
+				<p>=Atua no ramo de formação de condutores buscando sempre oferecer qualidade, 
+				conforto e agilidade na prestação de serviço para a 1ª Habilitação, 
+				adição de categoria e renovação.</p>
+			</div>
+			<div class="card">
+				<i>0</i>
+				<h3>Missão</h3>
+				<p>=Atua no ramo de formação de condutores buscando sempre oferecer qualidade, 
+				conforto e agilidade na prestação de serviço para a 1ª Habilitação, 
+				adição de categoria e renovação.</p>
+			</div>
+		</div>
+	</section>
+	
+</html>
