@@ -47,6 +47,7 @@ header .headerline-btn {display: flex;}
 }
 
 #moldura{
+	border-box:1px solid #000;
 	margin-top: max(50px, 70px);
 	width:100%;
 	height:max(80vh);
