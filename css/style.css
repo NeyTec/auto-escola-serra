@@ -55,7 +55,7 @@ header .headerline-btn {display: flex;}
 	
 }
 @media(max-width:700px){
-	#moldura{height: max(100px,200px);}
+	#moldura{height: max(50px,200px);}
 }
 
 
