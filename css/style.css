@@ -48,6 +48,7 @@ header .headerline-btn {display: flex;}
 
 #moldura{
 	margin-top: max(50px, 70px);
+	margin-bottom: 30px;
 	width:100%;
 	height:max(33vw);
 	background-size:contain;
@@ -96,10 +97,10 @@ section h2{font-size:max(30px,5vw);text-align: center;color:#ffb504;margin-botto
 .cards .card p{font-size:18px; text-align:justify;}
 
 @media(max-width:700px){
-	/* .cards {flex-direction:column;align-items:center;}
-	.cards .card{width:90%;margin-bottom:10px;}
-	.cards .card h3{font-size:16px;}
-	.cards .card p{font-size:14px;} */
+
+	.cards{flex-direction: column;width: 100%;border: 1px solid #000;align-items: center;}
+	.cards .card{margin-bottom: 20px;width: 90%;}
+
 }
 
 
