@@ -47,16 +47,16 @@ header .headerline-btn {display: flex;}
 }
 
 #moldura{
-	border-box:1px solid #000;
 	margin-top: max(50px, 70px);
 	width:100%;
-	height:max(80vh);
+	height:max(33vw);
 	background-size:contain;
 	background-repeat:no-repeat;
 	
 }
 @media(max-width:700px){
-	#moldura{height: max(50px,100px);}
+	.bg-headerline{display: flex;flex-direction: column;}
+	.bg-headerline #moldura{width: max(50px,100vw);border:1px solid #000;}
 }
 
 
